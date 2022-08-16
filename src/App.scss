@@ -1,0 +1,23 @@
+//variables
+$brandColour: blue;
+
+// mixins
+@mixin bordered($color: $brandColour, $width: 1px) {
+  border: $width solid $color;
+}
+
+.app {
+  text-align: center;
+  background-color:#000;
+  color: #fff;
+  @include bordered(pink, 20px);
+  .intro {
+    font-weight: bold;
+    color: $brandColour;
+  }
+}
+
+
+
+
+
